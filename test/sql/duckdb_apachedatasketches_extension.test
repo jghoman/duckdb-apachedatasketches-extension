@@ -1,0 +1,23 @@
+# name: test/sql/duckdb_apachedatasketches_extension.test
+# description: test duckdb_apachedatasketches_extension extension
+# group: [duckdb_apachedatasketches_extension]
+
+# Before we load the extension, this will fail
+statement error
+SELECT duckdb_apachedatasketches_extension('Sam');
+----
+Catalog Error: Scalar Function with name duckdb_apachedatasketches_extension does not exist!
+
+# Require statement will ensure this test is run with this extension loaded
+require duckdb_apachedatasketches_extension
+
+# Confirm the extension works
+query I
+SELECT duckdb_apachedatasketches_extension('Sam');
+----
+DuckdbApachedatasketchesExtension Sam 🐥
+
+query I
+SELECT duckdb_apachedatasketches_extension_openssl_version('Michael');
+----
+<REGEX>:DuckdbApachedatasketchesExtension Michael, my linked OpenSSL version is OpenSSL.*
