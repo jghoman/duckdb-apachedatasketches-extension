@@ -1,4 +1,16 @@
-# Duckdb_apachedatasketches_extension
+# DuckDB and Apache Datasketches
+
+
+## Features
+
+The following modules are being built:
+- [ ] [Theta sketch](https://datasketches.apache.org/docs/Theta/ThetaSketchFramework.html)
+- [ ] [Tuple sketch](https://datasketches.apache.org/docs/Tuple/TupleOverview.html)
+- [ ] [Quantiles sketch](https://datasketches.apache.org/docs/Quantiles/QuantilesOverview.html)
+- [ ] [KLL quantiles sketch](https://datasketches.apache.org/docs/KLL/KLLSketch.html)
+- [ ] [HLL sketch](https://datasketches.apache.org/docs/HLL/HLL.html) - DuckDB [natively supports HLL](https://duckdb.org/docs/sql/aggregates); we'll see if this needed.
+
+## Building
 
 This repository is based on https://github.com/duckdb/extension-template, check it out if you want to build and ship your own DuckDB extension.
 
@@ -7,7 +19,6 @@ This repository is based on https://github.com/duckdb/extension-template, check 
 This extension, Duckdb_apachedatasketches_extension, allow you to ... <extension_goal>.
 
 
-## Building
 ### Managing dependencies
 DuckDB extensions uses VCPKG for dependency management. Enabling VCPKG is very simple: follow the [installation instructions](https://vcpkg.io/en/getting-started) or just run the following:
 ```shell
