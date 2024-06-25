@@ -6,7 +6,6 @@
 The following modules are being built:
 - [ ] [Theta sketch](https://datasketches.apache.org/docs/Theta/ThetaSketchFramework.html)
 - [ ] [Tuple sketch](https://datasketches.apache.org/docs/Tuple/TupleOverview.html)
-- [ ] [Quantiles sketch](https://datasketches.apache.org/docs/Quantiles/QuantilesOverview.html)
 - [ ] [KLL quantiles sketch](https://datasketches.apache.org/docs/KLL/KLLSketch.html)
 - [ ] [HLL sketch](https://datasketches.apache.org/docs/HLL/HLL.html) - DuckDB [natively supports HLL](https://duckdb.org/docs/sql/aggregates); we'll see if this needed.
 
